@@ -1,11 +1,11 @@
 .grid-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 2px; /* 或者根据需要调整 */
+  column-count: 4; /* 或根据需要调整列数 */
+  column-gap: 2px;
 }
 
 .grid-gallery img {
   width: 100%;
-  height: auto; /* 调整高度为 auto */
-  object-fit: contain; /* 修改为 contain 以保持图片的原始长宽比 */
+  height: auto;
+  break-inside: avoid; /* 防止图片跨列分割 */
+  margin-bottom: 2px; /* 添加图片之间的间距 */
 }
