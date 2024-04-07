@@ -4,9 +4,7 @@
   grid-gap: 2px; /* 或者根据需要调整 */
 }
 
-.grid-gallery > div {
-  overflow: hidden;
-}
+
 
 .grid-gallery img {
   width: 100%;
