@@ -9,13 +9,11 @@
   <meta name="description"
     content="Hello there, I'm Lifeng Fan. – Curiosity is the lust of the mind.">
 
-    <link rel="stylesheet" href="dist/painting.css">
-
+  <link rel="stylesheet" href="dist/painting.css">
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="dist/assets/favicon.ico" />
   <link rel="stylesheet" href="dist/output.css" />
   <link rel="stylesheet" href="styles.css" />
-
   <!-- Alpine.js -->
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <!-- Start - Fonts -->
@@ -51,7 +49,6 @@
   class="dark:bg-black bg-white h-screen text-black dark:text-white px-5 md:px-20 opacity-0 animate-fade-in transition duration-500">
   <!-- Navbar -->
   <header class="flex w-full overflow-hidden pt-10 pb-1">
-    <!-- Navbar -->
     <nav id="nav" x-data="{ open: false }" role="navigation" class="w-full">
       <div class="container mx-auto flex flex-wrap items-center md:flex-no-wrap">
         <div class="mr-4 md:mr-8">
@@ -70,7 +67,7 @@
                 class="block absolute  h-0.5 w-5 bg-current   transform transition duration-500 ease-in-out"
                 :class="{'opacity-0': open } "></span>
               <span aria-hidden="true"
-                class="block absolute h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out"
+                class="block absolute  h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out"
                 :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
             </div>
           </button>
@@ -82,7 +79,8 @@
             <li class="group transition duration-300">
               <a href="../index.html" class="font-signika text-2xl">Photography
                 <span
-                  class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white"></span>
+                  class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white">
+                </span>
               </a>
             </li>
             <li class="group transition duration-300">
@@ -90,19 +88,21 @@
                 <span class="hidden md:block h-0.5 bg-black dark:bg-white"></span>
               </a>
             </li>
-
           </ul>
         </div>
       </div>
     </nav>
   </header>
+
+
   <!-- Content -->
 
-  <div class="container mx-auto">
+   <div class="container mx-auto">
     <h1 class="text-4xl pt-10 pb-8 font-bold">Painting</h1>
     <section class="text-neutral-700">
 
-      <div class="grid-gallery">
+      <div class="grid-gallery-paint">
+
 
         <a data-flickr-embed="true" href="https://www.flickr.com/photos/200414210@N03/53638376142/in/dateposted-public/" title="Untitled Artwork"><img src="https://live.staticflickr.com/65535/53638376142_1f3be41676_k.jpg" width="1448" height="2048" alt="需要使用vpn加载图片"/></a>
 
@@ -113,30 +113,23 @@
         <a data-flickr-embed="true" href="https://www.flickr.com/photos/200414210@N03/53639475778/in/dateposted-public/" title="Untitled Artwork"><img src="https://live.staticflickr.com/65535/53639475778_1fb4272de1_k.jpg" width="2048" height="1448" alt="Untitled Artwork"/></a>
 
 
-      </div>
-    </section>
-  </div>
+        </div>
+      </section>
+    </div>
+
+
 
 
   <!-- Footer -->
   <footer>
     <div class="max-w-screen-xl py-16 mx-auto">
-
       <p class="mt-8 text-xs text-gray-600 dark:text-gray-300 text-center">
         © 2024 by Lifeng Fan
       </p>
-
-        <p class="mt-8 text-xs text-gray-600 dark:text-gray-300 text-center">
-        小红书：凡人小飒； flickr: fanrenxiaosa
-      </p>
     </div>
   </footer>
-  <!-- Script for the LightBox -->
-  <script>
-    Fancybox.bind("[data-fancybox]", {});
-  </script>
-  <script src="dist/fade_in.js"></script>
-  <script src="dist/menu.js"></script>
+  <script src="fade_in.js"></script>
+  <script src="menu.js"></script>
 </body>
 
 </html>
