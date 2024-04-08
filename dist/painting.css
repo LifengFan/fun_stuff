@@ -1,9 +1,9 @@
-.grid-gallery {
+.grid-gallery-paint {
   column-count: 2; /* 或根据需要调整列数 */
   column-gap: 20px;
 }
 
-.grid-gallery img {
+.grid-gallery-paint img {
   width: 100%;
   height: auto;
   break-inside: avoid; /* 防止图片跨列分割 */
